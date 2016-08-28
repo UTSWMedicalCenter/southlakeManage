@@ -36,10 +36,42 @@ if (!isset($_SESSION['accountEmail'])) {
 
 <?php include "header.php"?>
 
-<div>
-    <h3>Account Detail</h3>
-    <button type="button" class="btn btn-primary">Save</button>
+<div class="container">
 
+    <form class="" role="form" method="POST" name="createAccountForm" action="sendAccountForm.php">
+
+        <div class="form-group">
+            <label for="accountID">AccountID</label>
+            <input type="text" class="form-control" id="accountID" name="accountID" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="southlake0000" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">PhoneNumber</label>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+        </div>
+
+        <div class="form-group">
+            <label for="homeAddress">HomeAddress</label>
+            <input type="text" class="form-control" id="homeAddress" name="homeAddress" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
 
 

@@ -39,7 +39,7 @@ if (!isset($_SESSION['accountEmail'])) {
 <div>
     <h3>Managers</h3>
 
-    create new
+    <a href="editAccount.php">create new</a>
 
     <br/>
     <h4>datatable</h4>
